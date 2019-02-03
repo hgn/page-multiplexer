@@ -1,0 +1,9 @@
+[Unit]
+Description=Page Multiplexer
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/share/page-multiplexer/page-multiplexer.py --directory /usr/share/page-multiplexer/page
+
+[Install]
+WantedBy=multi-user.target
